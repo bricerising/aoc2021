@@ -1,4 +1,4 @@
-# AOC 2021
+# AOC 2021  ![build-test](https://github.com/bricerising/aoc2021/actions/workflows/build-test/badge.svg)
 
 ## Run Tests
 
