@@ -1,14 +1,12 @@
+const median = require('../util').median
 
 const calculate_fuel = (data) => {
-    return data.map((val, index) => {
-        if (index+1 < data.length) {
-            return Math.abs(val - data[index+1]);
-        }
-        return 0;
-    }).reduce((prev, cur) => {
-        console.log(prev)
-        return prev + cur;
-    });
+    const target = median(data)
+    let total = 0
+    data.forEach((val) => {
+        total += Math.abs(target - val);
+    })
+    return total
 }
 
 module.exports = { calculate_fuel }
